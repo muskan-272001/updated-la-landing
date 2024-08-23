@@ -287,6 +287,7 @@ p {
 /* Main Navbar and Header Styles */
 .mainNavbar {
   background-color: #fbbf24;
+  /* background-color: red; */
   padding: 30px 160px;
 }
 
@@ -295,6 +296,7 @@ p {
   display: flex;
   justify-content: flex-end; /* Align logo to the end by default */
   margin-top: -80px;
+  
 }
 
 .circle-logo {
@@ -307,6 +309,8 @@ p {
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease; /* Smooth transition for responsiveness */
+  margin-top: -90px;
+  /* margin-right: 20rem; */
 }
 
 /* Text Styling */
@@ -353,6 +357,7 @@ p {
   .mainFormText {
     font-size: 30px !important;
     line-height: 2.5rem !important;
+    margin-top: 5rem;
   }
 
   .mainFormTextp {
@@ -367,7 +372,33 @@ p {
   .circle-logo {
     width: 180px;
     height: 150px;
-    margin-top: 40px; /* Adjust this value to hide half of the logo circle on smaller screens */
+    margin-top: -230px; /* Adjust this value to hide half of the logo circle on smaller screens */
+  }
+}
+@media (max-width: 500px) {
+  .mainNavbar {
+    padding: 15px 20px;
+  }
+
+  .mainFormText {
+    font-size: 30px !important;
+    line-height: 2.5rem !important;
+    margin-top: 5rem;
+  }
+
+  .mainFormTextp {
+    font-size: 16px !important;
+  }
+
+  .logo-container {
+    justify-content: center; /* Center the logo on small screens */
+    margin-top: -100px; /* Adjust margin to hide half of the circle logo */
+  }
+
+  .circle-logo {
+    width: 180px;
+    height: 150px;
+    margin-top: -290px;
   }
 }
 
@@ -383,7 +414,6 @@ p {
     padding-top: 80px; /* Adjust padding to accommodate for the logo positioning */
   }
 }
-
 
 /* ========= FORM WITH TEXT SECTION ==========================================*/
 .textLeftContainer {
@@ -509,7 +539,7 @@ p {
 /* Base styles for large screens (desktops) */
 .developmentClassMain {
   background-color: #fee3a6;
-  height: 1150px;
+  height: 1010px;
   padding: 30px 160px;
 }
 
@@ -524,7 +554,7 @@ p {
 }
 
 .circleKidImage {
-  margin-top: 150px!important;
+  margin-top: 150px !important;
   width: 200px;
   height: 200px;
   /* border-radius: 50%; */
@@ -538,8 +568,6 @@ p {
 .mainList {
   margin-top: 200px;
 }
-
-
 
 .mainClassDemo {
   /* margin-top: 150px !important; */
@@ -568,7 +596,7 @@ p {
 
 .demoClassVideo {
   /* background-color: yellow; */
-  margin-top: -15rem!important;
+  margin-top: -15rem !important;
 }
 
 /* .applyFreeBtn {
@@ -587,8 +615,6 @@ p {
   font-size: 20px;
   text-align: center;
 }
-
-
 
 /* Media Queries for responsive design */
 
@@ -639,7 +665,6 @@ p {
   .rightColumn {
     padding-top: 5rem;
   }
-  
 }
 
 /* Small screens (mobile) */
@@ -647,7 +672,7 @@ p {
   .developmentClassMain {
     padding: 30px 20px;
     padding-top: 60rem;
-    height: auto; 
+    height: auto;
   }
 
   .mainList {
@@ -664,7 +689,7 @@ p {
   }
 
   .applyFreeBtn {
-    margin: 10px 0; 
+    margin: 10px 0;
   }
 
   .rightColumn {
@@ -684,7 +709,6 @@ p {
     font-size: 18px !important;
     text-align: center;
   }
-
 
   .classButton {
     width: 60px;
@@ -742,7 +766,7 @@ p {
 /* Base Styles (for large screens) */
 .rankVideo {
   background-color: #fbbf24;
-  height: 160vh;
+  height: 130vh;
   padding: 30px 160px;
 }
 
@@ -857,8 +881,6 @@ p {
 
 /* Medium screens (tablets) */
 
-
-
 @media (max-width: 1142px) {
   /* .rankVideo {
     padding: 30px 80px;
@@ -916,7 +938,6 @@ p {
     font-size: 18px !important;
   }
 }
-
 
 @media (max-width: 1024px) {
   /* .rankVideo {
@@ -1441,7 +1462,7 @@ p {
 /* Existing CSS */
 .faq {
   background-color: #fee3a6;
-  height: 1350px;
+  height: 1390px;
   width: 100%; /* Corrected width for full width */
   /* padding: 30px 160px; */
 }
@@ -1644,7 +1665,7 @@ p {
 
 .boxesVideos {
   margin-bottom: 20px; /* Adjust margin as needed */
-  border-radius: 50px!important;
+  border-radius: 50px !important;
 }
 
 /* Media Queries */
@@ -1806,7 +1827,7 @@ p {
   text-decoration: none; /* Remove underline from links */
 }
 
-.footerHead h5{
+.footerHead h5 {
   text-align: center;
 }
 /* Media Queries for Responsiveness */
@@ -1857,15 +1878,11 @@ p {
   }
 }
 
-
-
-
-
 /* =============Media Queries ====================================== */
 
-@media(max-width:1018px){
+@media (max-width: 1018px) {
   .demoClassVideo {
-    margin-top: 1rem!important;
+    margin-top: 1rem !important;
     width: 400px;
     height: 225px;
   }
@@ -1881,7 +1898,7 @@ p {
   }
 
   .circleKidImage {
-    margin-top: 150px!important;
+    margin-top: 150px !important;
     width: 200px;
     height: 200px;
     /* border-radius: 50%; */
@@ -1921,10 +1938,9 @@ p {
   }
 }
 
-
-@media(max-width:360px){
+@media (max-width: 360px) {
   .demoClassVideo {
-    margin-top: 1rem!important;
+    margin-top: 1rem !important;
     width: auto;
     height: 225px;
   }
@@ -1940,7 +1956,7 @@ p {
   }
 
   .circleKidImage {
-    margin-top: 90px!important;
+    margin-top: 90px !important;
     width: 200px;
     height: 200px;
     /* border-radius: 50%; */
