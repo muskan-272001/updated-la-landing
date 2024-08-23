@@ -17,6 +17,9 @@ const Testimonials = () => {
                   height="auto"
                 />
               </div>
+              <div className="boxes">
+            <p>Mr. Mohit Srivastaava, Viraj's father - Batch of 2024-25</p>
+          </div>
             </div>
             <div class="col">
               <div className="boxesVideos">
@@ -26,6 +29,9 @@ const Testimonials = () => {
                   height="auto"
                 />
               </div>
+              <div className="boxes">
+            <p>Mr. Mohit Srivastaava, Viraj's father - Batch of 2024-25</p>
+          </div>
             </div>
             <div class="col">
               <div className="boxesVideos">
@@ -35,6 +41,9 @@ const Testimonials = () => {
                   height="auto"
                 />
               </div>
+              <div className="boxes">
+            <p>Mr. Mohit Srivastaava, Viraj's father - Batch of 2024-25</p>
+          </div>
             </div>
             <div class="col">
               <div className="boxesVideos">
@@ -44,6 +53,9 @@ const Testimonials = () => {
                   height="auto"
                 />
               </div>
+                <div className="boxes">
+            <p>Mr. Mohit Srivastaava, Viraj's father - Batch of 2024-25</p>
+          </div>
             </div>
           </div>
           </div>

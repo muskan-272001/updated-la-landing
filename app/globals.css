@@ -1643,24 +1643,29 @@ p {
 
 /* ===============Testimonials =================== */
 /* Base Styles (for large screens) */
-/* .testimonials {
-  background-color: #ffefd9;
-  padding: 30px 20px;
+.testimonials {
+  /* background-color: #ffefd9; */
+  padding: 30px 160px;
   
 }
 
 .testimonialCard {
-  background-color: red;
+  background-color: #ffefd9ed;
+  padding: 20px;
+  /* padding: 10px 200px; */
+}
+
+/* .testimonialCardVideo {
+  background-color: #ffefd9;
   padding: 10px 200px;
 } */
 
-.testimonialCardVideo {
-  background-color: #ffefd9;
-  padding: 10px 200px;
-}
-
 .videoNameBoxes {
   padding: 10px 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20rem; */
 }
 
 .boxesVideos {
