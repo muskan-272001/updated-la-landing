@@ -284,30 +284,17 @@ p {
 }
 
 /* ============HEADER ======================== */
+/* Main Navbar and Header Styles */
 .mainNavbar {
   background-color: #fbbf24;
   padding: 30px 160px;
 }
 
-.mainFormText {
-  margin-bottom: 15px;
-  margin-top: 20px;
-  width: 100%;
-  max-width: 600px;
-  font-size: 60px !important;
-  line-height: 3.8rem !important;
-  font-weight: 700 !important;
-}
-
-.mainFormTextp {
-  font-weight: 600 !important;
-  font-size: 21px !important;
-}
-
-.circle-container {
-  width: 100%;
+/* Logo Container and Styling */
+.logo-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align logo to the end by default */
+  margin-top: -80px;
 }
 
 .circle-logo {
@@ -319,77 +306,46 @@ p {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: -60px;
+  transition: all 0.3s ease; /* Smooth transition for responsiveness */
 }
 
-@media (max-width: 800px) {
+/* Text Styling */
+.text-container {
+  text-align: center;
+}
+
+.mainFormText {
+  margin-bottom: 15px;
+  font-size: 60px !important;
+  line-height: 3.8rem !important;
+  font-weight: 700 !important;
+}
+
+.mainFormTextp {
+  font-weight: 600 !important;
+  font-size: 21px !important;
+}
+
+/* Responsive Styles */
+
+/* Tablets and Larger Devices */
+@media (min-width: 768px) {
   .mainNavbar {
-    padding: 20px 40px;
+    padding: 30px 80px;
   }
 
-  .mainFormText {
-    font-size: 40px !important;
-    line-height: 3rem !important;
+  .logo-container {
+    justify-content: flex-end; /* Align logo to the end */
+    margin-bottom: 0;
   }
 
-  .mainFormTextp {
-    font-size: 18px !important;
-  }
-
-  .circle-logo {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 768px) {
-  .mainNavbar {
-    padding: 20px 40px;
-  }
-
-  .mainFormText {
-    font-size: 40px !important;
-    line-height: 3rem !important;
-  }
-
-  .mainFormTextp {
-    font-size: 18px !important;
-  }
-
-  .circle-logo {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (max-width: 752px) {
-  .mainNavbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px;
-  }
-
-  .mainFormText {
-    margin-top: 5rem;
-    font-size: 40px !important;
-    line-height: 3rem !important;
-  }
-
-  .mainFormTextp {
-    font-size: 18px !important;
-  }
-
-  .circle-logo {
-    margin-top: -300px;
-    width: 150px;
-    height: 150px;
+  .text-container {
+    text-align: left; /* Align text to the left for tablets and larger devices */
   }
 }
 
-/* Medium screens (tablets) */
-
-/* Small screens (mobile) */
-@media (max-width: 480px) {
+/* Small Screens (Mobile) */
+@media (max-width: 767px) {
   .mainNavbar {
     padding: 15px 20px;
   }
@@ -403,21 +359,31 @@ p {
     font-size: 16px !important;
   }
 
+  .logo-container {
+    justify-content: center; /* Center the logo on small screens */
+    margin-top: -100px; /* Adjust margin to hide half of the circle logo */
+  }
+
   .circle-logo {
-    width: 120px;
-    height: 120px;
-    margin-top: -30px;
+    width: 180px;
+    height: 150px;
+    margin-top: 40px; /* Adjust this value to hide half of the logo circle on smaller screens */
   }
 }
 
-.logo {
-  width: 70%;
-  height: auto;
+/* Small Screens (phones) */
+@media (max-width: 480px) {
+  .circle-logo {
+    width: 180px;
+    height: 150px;
+    margin-top: -20px; /* Adjust this value to hide half of the logo circle on smaller screens */
+  }
+
+  .mainNavbar {
+    padding-top: 80px; /* Adjust padding to accommodate for the logo positioning */
+  }
 }
 
-.header {
-  background-color: #fbbf24;
-}
 
 /* ========= FORM WITH TEXT SECTION ==========================================*/
 .textLeftContainer {
@@ -576,8 +542,9 @@ p {
 
 
 .mainClassDemo {
-  margin-top: 150px !important;
-  padding: 20px 90px;
+  /* margin-top: 150px !important; */
+  /* margin: auto; */
+  /* padding: auto; */
   /* background-color: yellow; */
   display: flex;
   flex-direction: column;
@@ -616,7 +583,7 @@ p {
 }
 
 .classText {
-  width: 400px;
+  width: auto;
   font-size: 20px;
   text-align: center;
 }
@@ -923,7 +890,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 26rem !important;
+    width: auto !important;
     height: 15rem;
   }
 
@@ -982,7 +949,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 26rem !important;
+    width: auto !important;
     height: 15rem;
   }
 
@@ -1039,7 +1006,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 26rem !important;
+    width: auto !important;
     height: 15rem;
   }
 
@@ -1099,7 +1066,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 26rem !important;
+    width: auto !important;
     height: 15rem;
   }
 
@@ -1141,7 +1108,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 40rem !important;
+    width: auto !important;
     height: 15rem;
     text-align: center;
   }
@@ -1193,7 +1160,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 40rem !important;
+    width: auto !important;
     height: 15rem;
     text-align: center;
   }
@@ -1442,7 +1409,7 @@ p {
   .rankText {
     padding-top: 2rem;
     /* background-color: red; */
-    width: 40rem !important;
+    width: auto !important;
     height: 15rem;
     text-align: center;
   }

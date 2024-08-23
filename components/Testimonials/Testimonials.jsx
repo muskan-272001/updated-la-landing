@@ -5,7 +5,6 @@ import VideoNameBoxes from "../VideoNameBoxes/VideoNameBoxes";
 const Testimonials = () => {
   return (
     <>
-      {" "}
       <div className="testimonials">
         <div className="testimonialCard">
           <div className="testimonialCardVideo">
